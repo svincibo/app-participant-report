@@ -1,0 +1,31 @@
+#!/bin/bash
+
+t1=$(jq -r .t1 config.json)
+bold=$(jq -r .bold config.json)
+wmcsurfaces=$(jq -r .wmcsurfaces config.json)
+wmctracts=$(jq -r .wmctracts config.json)
+
+set -ex
+
+cat templates/header.html > html/index.html
+
+if [ -e "$t1" ]; then
+    echo "handling anat $t1"
+    cp $t1 html
+    cat templates/t1.html >> html/index.html
+fi
+
+if [ -e "$bold" ]; then
+    echo "handling func"
+    cp $bold html
+    cat templates/bold.html >> html/index.html
+fi
+
+if [ -d "$wmcsurfaces" ]; then
+    echo "handling wmc"
+    cp -r $wmcsurfaces html
+    cp -r $wmctracts html
+    cat templates/wmc.html >> html/index.html
+fi
+
+cat templates/footer.html >> html/index.html
