@@ -7,25 +7,26 @@ wmctracts=$(jq -r .wmctracts config.json)
 
 set -ex
 
-cat templates/header.html > html/index.html
+mkdir -p output/html
+cat templates/header.html > output/html/index.html
 
 if [ -e "$t1" ]; then
     echo "handling anat $t1"
-    cp $t1 html
-    cat templates/t1.html >> html/index.html
+    cp $t1 output/html
+    cat templates/t1.html >> output/html/index.html
 fi
 
 if [ -e "$bold" ]; then
     echo "handling func"
-    cp $bold html
-    cat templates/bold.html >> html/index.html
+    cp $bold output/html
+    cat templates/bold.html >> output/html/index.html
 fi
 
 if [ -d "$wmcsurfaces" ]; then
     echo "handling wmc"
-    cp -r $wmcsurfaces html
-    cp -r $wmctracts html
-    cat templates/wmc.html >> html/index.html
+    cp -r $wmcsurfaces output/html
+    cp -r $wmctracts output/html
+    cat templates/wmc.html >> output/html/index.html
 fi
 
-cat templates/footer.html >> html/index.html
+cat templates/footer.html >> output/html/index.html
