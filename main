@@ -1,6 +1,6 @@
 #!/bin/bash
 
-t1=$(jq -r .t1 config.json)
+fs=$(jq -r .fs config.json)
 bold=$(jq -r .bold config.json)
 wmcsurfaces=$(jq -r .wmcsurfaces config.json)
 wmctracts=$(jq -r .wmctracts config.json)
@@ -10,10 +10,23 @@ set -ex
 mkdir -p output/html
 cat templates/header.html > output/html/index.html
 
-if [ -e "$t1" ]; then
-    echo "handling anat $t1"
-    cp $t1 output/html
-    cat templates/t1.html >> output/html/index.html
+if [  -d "$fs" ]; then
+    echo "handling freesurfer"
+
+    [ -z "$FREESURFER_LICENSE" ] && echo "Please set FREESURFER_LICENSE in .bashrc" && exit 1;
+    echo $FREESURFER_LICENSE > license.txt  
+
+    #nifti image 
+    singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
+        mri_convert $fs/mri/T1.mgz output/html/T1.nii.gz
+
+    #surfaces (let's use surf/*.pial for now)
+    singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
+        mris_convert --to-scanner $fs/surf/rh.pial output/html/rh.pial.gii
+    singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
+        mris_convert --to-scanner $fs/surf/lh.pial output/html/lh.pial.gii
+
+    cat templates/anat.html >> output/html/index.html
 fi
 
 if [ -e "$bold" ]; then

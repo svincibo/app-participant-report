@@ -1,3 +1,11 @@
 config.json
 testdata
-html
+
+output/html/tracts
+output/html/surfaces
+output/html/*.nii.gz
+output/html/*.gii
+license.txt
+
+output/html/index.html
+
