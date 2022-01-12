@@ -8,4 +8,5 @@ output/html/*.gii
 license.txt
 
 output/html/index.html
-
+output/html/bold
+tmp
