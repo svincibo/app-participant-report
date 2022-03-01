@@ -4,6 +4,7 @@ fs=$(jq -r .fs config.json)
 bold=$(jq -r .bold config.json)
 wmcsurfaces=$(jq -r .wmcsurfaces config.json)
 wmctracts=$(jq -r .wmctracts config.json)
+t1=$(jq -r .t1 config.json)
 
 set -ex
 
@@ -11,18 +12,22 @@ mkdir -p tmp
 mkdir -p output/html
 cat templates/header.html > output/html/index.html
 
-if [ -e "$bold" ]; then
-    echo "handling func"
-    #[ ! -f tmp/bold.mean.nii.gz ] && singularity exec -e docker://brainlife/fsl:6.0.4-patched fslmaths $bold tmp/bold.mean.nii.gz
-    cat templates/bold.html >> output/html/index.html
-    echo "creating screenshots of bold"
-    #singularity exec -e docker://brainlife/fsleyes:1.0 xvfb-run -s "-screen 0 640x480x24" ./bold.sh $bold
-    #singularity exec -e docker://brainlife/fsleyes:0.32.3 xvfb-run -s "-screen 0 640x480x24" fsleyes -r bold.py
-    mkdir -p output/html/bold
-    singularity exec -e docker://brainlife/dipy:1.4.0 ./boldThumbnails.py $bold tmp/bold.html
-    cat tmp/bold.html >> output/html/index.html
+if [ -d "$wmcsurfaces" ]; then
+    echo "handling wmc"
+    cp -r $wmcsurfaces output/html
+    cp -r $wmctracts output/html
+    cat templates/wmc.html >> output/html/index.html
+
+    echo "setting up tractview config"
+    singularity exec -e docker://brainlife/dipy:1.4.0 ./tractviewConfig.py $wmctracts $wmcsurfaces output/html/tractview/index.html
 fi
 
+if [ -f "$t1" ]; then
+    echo "handling anat"
+    mkdir -p output/html/anat
+    cp $t1 output/html/anat/t1.nii.gz
+    cat templates/anat.html >> output/html/index.html
+fi
 
 if [  -d "$fs" ]; then
     echo "handling freesurfer"
@@ -30,24 +35,31 @@ if [  -d "$fs" ]; then
     [ -z "$FREESURFER_LICENSE" ] && echo "Please set FREESURFER_LICENSE in .bashrc" && exit 1;
     echo $FREESURFER_LICENSE > license.txt  
 
+    mkdir -p output/html/fs
+
     #nifti image 
     singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
-        mri_convert $fs/mri/T1.mgz output/html/T1.nii.gz
+        mri_convert $fs/mri/T1.mgz output/html/fs/T1.nii.gz
+
+    singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
+        mri_convert $fs/mri/aparc+aseg.mgz output/html/fs/aparc+aseg.nii.gz
 
     #surfaces (let's use surf/*.pial for now)
     singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
-        mris_convert --to-scanner $fs/surf/rh.pial output/html/rh.pial.gii
+        mris_convert --to-scanner $fs/surf/rh.pial output/html/fs/rh.pial.gii
     singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer-mini:7.1.1 \
-        mris_convert --to-scanner $fs/surf/lh.pial output/html/lh.pial.gii
+        mris_convert --to-scanner $fs/surf/lh.pial output/html/fs/lh.pial.gii
 
-    cat templates/anat.html >> output/html/index.html
+    cat templates/fs.html >> output/html/index.html
 fi
 
-if [ -d "$wmcsurfaces" ]; then
-    echo "handling wmc"
-    cp -r $wmcsurfaces output/html
-    cp -r $wmctracts output/html
-    cat templates/wmc.html >> output/html/index.html
+if [ -e "$bold" ]; then
+    echo "handling func"
+    mkdir -p output/html/bold
+    singularity exec -e docker://brainlife/dipy:1.4.0 ./boldThumbnails.py $bold output/html/bold/index.html
+    cat templates/bold.html >> output/html/index.html
 fi
 
 cat templates/footer.html >> output/html/index.html
+
+

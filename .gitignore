@@ -5,6 +5,8 @@ output/html/tracts
 output/html/surfaces
 output/html/*.nii.gz
 output/html/*.gii
+output/html/anat
+output/html/fs
 license.txt
 
 output/html/index.html

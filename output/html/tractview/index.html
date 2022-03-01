@@ -1,0 +1,2724 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/ui/tractview/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TractView</title>
+  <script>
+   window.config = {
+    "tracts": [
+        {
+            "name": "forcepsMinor",
+            "color": [
+                0.8147236864,
+                0.2550951155,
+                0.004634224134
+            ],
+            "filename": "1.json",
+            "url": "../tracts/1.json"
+        },
+        {
+            "name": "forcepsMajor",
+            "color": [
+                0.9057919371,
+                0.5059570517,
+                0.7749104647
+            ],
+            "filename": "2.json",
+            "url": "../tracts/2.json"
+        },
+        {
+            "name": "parietalCC",
+            "color": [
+                0.1269868163,
+                0.6990767227,
+                0.8173032207
+            ],
+            "filename": "3.json",
+            "url": "../tracts/3.json"
+        },
+        {
+            "name": "middleFrontalCC",
+            "color": [
+                0.9133758561,
+                0.8909032525,
+                0.8686947054
+            ],
+            "filename": "4.json",
+            "url": "../tracts/4.json"
+        },
+        {
+            "name": "anterioFrontalCC",
+            "color": [
+                0.6323592462,
+                0.9592914252,
+                0.08443584551
+            ],
+            "filename": "5.json",
+            "url": "../tracts/5.json"
+        },
+        {
+            "name": "leftcingulum",
+            "color": [
+                0.097540405,
+                0.54721553,
+                0.3997826491
+            ],
+            "filename": "6.json",
+            "url": "../tracts/6.json"
+        },
+        {
+            "name": "rightcingulum",
+            "color": [
+                0.2784982189,
+                0.1386244428,
+                0.2598704029
+            ],
+            "filename": "7.json",
+            "url": "../tracts/7.json"
+        },
+        {
+            "name": "leftUncinate",
+            "color": [
+                0.5468815192,
+                0.1492940056,
+                0.8000684802
+            ],
+            "filename": "8.json",
+            "url": "../tracts/8.json"
+        },
+        {
+            "name": "rightUncinate",
+            "color": [
+                0.9575068354,
+                0.2575082541,
+                0.4314138275
+            ],
+            "filename": "9.json",
+            "url": "../tracts/9.json"
+        },
+        {
+            "name": "leftIFOF",
+            "color": [
+                0.9648885352,
+                0.840717256,
+                0.9106475944
+            ],
+            "filename": "10.json",
+            "url": "../tracts/10.json"
+        },
+        {
+            "name": "rightIFOF",
+            "color": [
+                0.1576130817,
+                0.254282179,
+                0.1818470283
+            ],
+            "filename": "11.json",
+            "url": "../tracts/11.json"
+        },
+        {
+            "name": "leftArc",
+            "color": [
+                0.9705927818,
+                0.8142848261,
+                0.2638029165
+            ],
+            "filename": "12.json",
+            "url": "../tracts/12.json"
+        },
+        {
+            "name": "rightArc",
+            "color": [
+                0.9571669482,
+                0.2435249687,
+                0.1455389804
+            ],
+            "filename": "13.json",
+            "url": "../tracts/13.json"
+        },
+        {
+            "name": "leftSLF1And2",
+            "color": [
+                0.4853756487,
+                0.9292636232,
+                0.1360685587
+            ],
+            "filename": "14.json",
+            "url": "../tracts/14.json"
+        },
+        {
+            "name": "rightSLF1And2",
+            "color": [
+                0.8002804689,
+                0.349983766,
+                0.8692922076
+            ],
+            "filename": "15.json",
+            "url": "../tracts/15.json"
+        },
+        {
+            "name": "leftSLF3",
+            "color": [
+                0.1418863386,
+                0.1965952504,
+                0.5797045874
+            ],
+            "filename": "16.json",
+            "url": "../tracts/16.json"
+        },
+        {
+            "name": "rightSLF3",
+            "color": [
+                0.4217612826,
+                0.251083858,
+                0.5498602018
+            ],
+            "filename": "17.json",
+            "url": "../tracts/17.json"
+        },
+        {
+            "name": "leftfrontoThalamic",
+            "color": [
+                0.9157355252,
+                0.6160446761,
+                0.1449547982
+            ],
+            "filename": "18.json",
+            "url": "../tracts/18.json"
+        },
+        {
+            "name": "rightfrontoThalamic",
+            "color": [
+                0.7922073296,
+                0.4732888489,
+                0.8530311177
+            ],
+            "filename": "19.json",
+            "url": "../tracts/19.json"
+        },
+        {
+            "name": "lefttemporoThalamic",
+            "color": [
+                0.9594924264,
+                0.3516595071,
+                0.6220551315
+            ],
+            "filename": "20.json",
+            "url": "../tracts/20.json"
+        },
+        {
+            "name": "righttemporoThalamic",
+            "color": [
+                0.6557406992,
+                0.8308286279,
+                0.3509523809
+            ],
+            "filename": "21.json",
+            "url": "../tracts/21.json"
+        },
+        {
+            "name": "leftparietoThalamic",
+            "color": [
+                0.03571167857,
+                0.5852640912,
+                0.5132495399
+            ],
+            "filename": "22.json",
+            "url": "../tracts/22.json"
+        },
+        {
+            "name": "rightparietoThalamic",
+            "color": [
+                0.8491293059,
+                0.5497236083,
+                0.4018080338
+            ],
+            "filename": "23.json",
+            "url": "../tracts/23.json"
+        },
+        {
+            "name": "leftmotorThalamic",
+            "color": [
+                0.9339932478,
+                0.9171936638,
+                0.07596669169
+            ],
+            "filename": "24.json",
+            "url": "../tracts/24.json"
+        },
+        {
+            "name": "rightmotorThalamic",
+            "color": [
+                0.6787351549,
+                0.2858390188,
+                0.2399161536
+            ],
+            "filename": "25.json",
+            "url": "../tracts/25.json"
+        },
+        {
+            "name": "leftspinoThalamic",
+            "color": [
+                0.7577401306,
+                0.7572002291,
+                0.1233189348
+            ],
+            "filename": "26.json",
+            "url": "../tracts/26.json"
+        },
+        {
+            "name": "rightspinoThalamic",
+            "color": [
+                0.7431324681,
+                0.7537290943,
+                0.1839077883
+            ],
+            "filename": "27.json",
+            "url": "../tracts/27.json"
+        },
+        {
+            "name": "leftAslant",
+            "color": [
+                0.3922270195,
+                0.380445847,
+                0.2399525257
+            ],
+            "filename": "28.json",
+            "url": "../tracts/28.json"
+        },
+        {
+            "name": "rightAslant",
+            "color": [
+                0.6554778902,
+                0.5678216407,
+                0.4172670691
+            ],
+            "filename": "29.json",
+            "url": "../tracts/29.json"
+        },
+        {
+            "name": "leftILF",
+            "color": [
+                0.1711866878,
+                0.07585428956,
+                0.04965443033
+            ],
+            "filename": "30.json",
+            "url": "../tracts/30.json"
+        },
+        {
+            "name": "rightILF",
+            "color": [
+                0.706046088,
+                0.05395011867,
+                0.9027161099
+            ],
+            "filename": "31.json",
+            "url": "../tracts/31.json"
+        },
+        {
+            "name": "leftMDLFang",
+            "color": [
+                0.03183284638,
+                0.530797553,
+                0.9447871897
+            ],
+            "filename": "32.json",
+            "url": "../tracts/32.json"
+        },
+        {
+            "name": "rightMDLFang",
+            "color": [
+                0.276922985,
+                0.7791672301,
+                0.4908640925
+            ],
+            "filename": "33.json",
+            "url": "../tracts/33.json"
+        },
+        {
+            "name": "leftMDLFspl",
+            "color": [
+                0.04617139063,
+                0.9340106842,
+                0.4892526384
+            ],
+            "filename": "34.json",
+            "url": "../tracts/34.json"
+        },
+        {
+            "name": "rightMDLFspl",
+            "color": [
+                0.09713178124,
+                0.1299062085,
+                0.3377194098
+            ],
+            "filename": "35.json",
+            "url": "../tracts/35.json"
+        },
+        {
+            "name": "leftpArc",
+            "color": [
+                0.8234578283,
+                0.5688236609,
+                0.9000538464
+            ],
+            "filename": "36.json",
+            "url": "../tracts/36.json"
+        },
+        {
+            "name": "rightpArc",
+            "color": [
+                0.694828623,
+                0.4693906411,
+                0.3692467811
+            ],
+            "filename": "37.json",
+            "url": "../tracts/37.json"
+        },
+        {
+            "name": "leftTPC",
+            "color": [
+                0.3170994801,
+                0.0119020695,
+                0.1112027553
+            ],
+            "filename": "38.json",
+            "url": "../tracts/38.json"
+        },
+        {
+            "name": "rightTPC",
+            "color": [
+                0.9502220488,
+                0.3371226444,
+                0.7802520683
+            ],
+            "filename": "39.json",
+            "url": "../tracts/39.json"
+        },
+        {
+            "name": "leftmeyer",
+            "color": [
+                0.0344460805,
+                0.1621823082,
+                0.389738837
+            ],
+            "filename": "40.json",
+            "url": "../tracts/40.json"
+        },
+        {
+            "name": "rightmeyer",
+            "color": [
+                0.4387443597,
+                0.7942845407,
+                0.2416912859
+            ],
+            "filename": "41.json",
+            "url": "../tracts/41.json"
+        },
+        {
+            "name": "leftbaum",
+            "color": [
+                0.3815584571,
+                0.311215042,
+                0.4039121456
+            ],
+            "filename": "42.json",
+            "url": "../tracts/42.json"
+        },
+        {
+            "name": "rightbaum",
+            "color": [
+                0.7655167881,
+                0.5285331355,
+                0.09645452517
+            ],
+            "filename": "43.json",
+            "url": "../tracts/43.json"
+        },
+        {
+            "name": "leftMotorCerebellar",
+            "color": [
+                0.7951999011,
+                0.1656487295,
+                0.1319732926
+            ],
+            "filename": "44.json",
+            "url": "../tracts/44.json"
+        },
+        {
+            "name": "rightMotorCerebellar",
+            "color": [
+                0.1868726046,
+                0.6019819414,
+                0.9420505908
+            ],
+            "filename": "45.json",
+            "url": "../tracts/45.json"
+        },
+        {
+            "name": "leftAnterioFrontoCerebellar",
+            "color": [
+                0.4897643958,
+                0.2629712845,
+                0.9561345402
+            ],
+            "filename": "46.json",
+            "url": "../tracts/46.json"
+        },
+        {
+            "name": "rightAnterioFrontoCerebellar",
+            "color": [
+                0.4455862007,
+                0.6540790985,
+                0.5752085951
+            ],
+            "filename": "47.json",
+            "url": "../tracts/47.json"
+        },
+        {
+            "name": "leftThalamicoCerebellar",
+            "color": [
+                0.6463130101,
+                0.6892145031,
+                0.05977954295
+            ],
+            "filename": "48.json",
+            "url": "../tracts/48.json"
+        },
+        {
+            "name": "rightThalamicoCerebellar",
+            "color": [
+                0.7093648309,
+                0.7481515928,
+                0.2347799134
+            ],
+            "filename": "49.json",
+            "url": "../tracts/49.json"
+        },
+        {
+            "name": "leftOccipitoCerebellar",
+            "color": [
+                0.754686682,
+                0.4505415985,
+                0.3531585712
+            ],
+            "filename": "50.json",
+            "url": "../tracts/50.json"
+        },
+        {
+            "name": "rightOccipitoCerebellar",
+            "color": [
+                0.276025077,
+                0.083821378,
+                0.8211940402
+            ],
+            "filename": "51.json",
+            "url": "../tracts/51.json"
+        },
+        {
+            "name": "leftParietoCerebellar",
+            "color": [
+                0.6797026769,
+                0.2289769687,
+                0.01540343765
+            ],
+            "filename": "52.json",
+            "url": "../tracts/52.json"
+        },
+        {
+            "name": "rightParietoCerebellar",
+            "color": [
+                0.655098004,
+                0.9133373615,
+                0.04302380166
+            ],
+            "filename": "53.json",
+            "url": "../tracts/53.json"
+        },
+        {
+            "name": "leftContraMotorCerebellar",
+            "color": [
+                0.1626117352,
+                0.152378019,
+                0.1689900295
+            ],
+            "filename": "54.json",
+            "url": "../tracts/54.json"
+        },
+        {
+            "name": "rightContraMotorCerebellar",
+            "color": [
+                0.1189976816,
+                0.8258169775,
+                0.649115475
+            ],
+            "filename": "55.json",
+            "url": "../tracts/55.json"
+        },
+        {
+            "name": "leftContraAnterioFrontoCerebellar",
+            "color": [
+                0.498364052,
+                0.5383424353,
+                0.7317223857
+            ],
+            "filename": "56.json",
+            "url": "../tracts/56.json"
+        },
+        {
+            "name": "rightContraAnterioFrontoCerebellar",
+            "color": [
+                0.9597439585,
+                0.9961347166,
+                0.6477459631
+            ],
+            "filename": "57.json",
+            "url": "../tracts/57.json"
+        },
+        {
+            "name": "leftVOF",
+            "color": [
+                0.3403857267,
+                0.07817552875,
+                0.4509237064
+            ],
+            "filename": "58.json",
+            "url": "../tracts/58.json"
+        },
+        {
+            "name": "rightVOF",
+            "color": [
+                0.585267751,
+                0.4426782698,
+                0.5470088923
+            ],
+            "filename": "59.json",
+            "url": "../tracts/59.json"
+        },
+        {
+            "name": "leftCST",
+            "color": [
+                0.2238119395,
+                0.1066527702,
+                0.2963208056
+            ],
+            "filename": "60.json",
+            "url": "../tracts/60.json"
+        },
+        {
+            "name": "rightCST",
+            "color": [
+                0.7512670593,
+                0.9618980809,
+                0.7446928071
+            ],
+            "filename": "61.json",
+            "url": "../tracts/61.json"
+        }
+    ],
+    "surfaces": [
+        {
+            "filename": "0.Unknown.vtk",
+            "name": "Unknown",
+            "label": "0",
+            "color": {
+                "r": 0,
+                "b": 0,
+                "g": 0
+            },
+            "url": "../surfaces/0.Unknown.vtk"
+        },
+        {
+            "filename": "2.Left-Cerebral-White-Matter.vtk",
+            "name": "Left-Cerebral-White-Matter",
+            "label": "2",
+            "color": {
+                "r": 245,
+                "b": 245,
+                "g": 245
+            },
+            "url": "../surfaces/2.Left-Cerebral-White-Matter.vtk"
+        },
+        {
+            "filename": "4.Left-Lateral-Ventricle.vtk",
+            "name": "Left-Lateral-Ventricle",
+            "label": "4",
+            "color": {
+                "r": 120,
+                "b": 134,
+                "g": 18
+            },
+            "url": "../surfaces/4.Left-Lateral-Ventricle.vtk"
+        },
+        {
+            "filename": "5.Left-Inf-Lat-Vent.vtk",
+            "name": "Left-Inf-Lat-Vent",
+            "label": "5",
+            "color": {
+                "r": 196,
+                "b": 250,
+                "g": 58
+            },
+            "url": "../surfaces/5.Left-Inf-Lat-Vent.vtk"
+        },
+        {
+            "filename": "7.Left-Cerebellum-White-Matter.vtk",
+            "name": "Left-Cerebellum-White-Matter",
+            "label": "7",
+            "color": {
+                "r": 220,
+                "b": 164,
+                "g": 248
+            },
+            "url": "../surfaces/7.Left-Cerebellum-White-Matter.vtk"
+        },
+        {
+            "filename": "8.Left-Cerebellum-Cortex.vtk",
+            "name": "Left-Cerebellum-Cortex",
+            "label": "8",
+            "color": {
+                "r": 230,
+                "b": 34,
+                "g": 148
+            },
+            "url": "../surfaces/8.Left-Cerebellum-Cortex.vtk"
+        },
+        {
+            "filename": "10.Left-Thalamus-Proper.vtk",
+            "name": "Left-Thalamus-Proper",
+            "label": "10",
+            "color": {
+                "r": 0,
+                "b": 14,
+                "g": 118
+            },
+            "url": "../surfaces/10.Left-Thalamus-Proper.vtk"
+        },
+        {
+            "filename": "11.Left-Caudate.vtk",
+            "name": "Left-Caudate",
+            "label": "11",
+            "color": {
+                "r": 122,
+                "b": 220,
+                "g": 186
+            },
+            "url": "../surfaces/11.Left-Caudate.vtk"
+        },
+        {
+            "filename": "12.Left-Putamen.vtk",
+            "name": "Left-Putamen",
+            "label": "12",
+            "color": {
+                "r": 236,
+                "b": 176,
+                "g": 13
+            },
+            "url": "../surfaces/12.Left-Putamen.vtk"
+        },
+        {
+            "filename": "13.Left-Pallidum.vtk",
+            "name": "Left-Pallidum",
+            "label": "13",
+            "color": {
+                "r": 12,
+                "b": 255,
+                "g": 48
+            },
+            "url": "../surfaces/13.Left-Pallidum.vtk"
+        },
+        {
+            "filename": "14.3rd-Ventricle.vtk",
+            "name": "3rd-Ventricle",
+            "label": "14",
+            "color": {
+                "r": 204,
+                "b": 142,
+                "g": 182
+            },
+            "url": "../surfaces/14.3rd-Ventricle.vtk"
+        },
+        {
+            "filename": "15.4th-Ventricle.vtk",
+            "name": "4th-Ventricle",
+            "label": "15",
+            "color": {
+                "r": 42,
+                "b": 164,
+                "g": 204
+            },
+            "url": "../surfaces/15.4th-Ventricle.vtk"
+        },
+        {
+            "filename": "16.Brain-Stem.vtk",
+            "name": "Brain-Stem",
+            "label": "16",
+            "color": {
+                "r": 119,
+                "b": 176,
+                "g": 159
+            },
+            "url": "../surfaces/16.Brain-Stem.vtk"
+        },
+        {
+            "filename": "17.Left-Hippocampus.vtk",
+            "name": "Left-Hippocampus",
+            "label": "17",
+            "color": {
+                "r": 220,
+                "b": 20,
+                "g": 216
+            },
+            "url": "../surfaces/17.Left-Hippocampus.vtk"
+        },
+        {
+            "filename": "18.Left-Amygdala.vtk",
+            "name": "Left-Amygdala",
+            "label": "18",
+            "color": {
+                "r": 103,
+                "b": 255,
+                "g": 255
+            },
+            "url": "../surfaces/18.Left-Amygdala.vtk"
+        },
+        {
+            "filename": "24.CSF.vtk",
+            "name": "CSF",
+            "label": "24",
+            "color": {
+                "r": 60,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/24.CSF.vtk"
+        },
+        {
+            "filename": "26.Left-Accumbens-area.vtk",
+            "name": "Left-Accumbens-area",
+            "label": "26",
+            "color": {
+                "r": 255,
+                "b": 0,
+                "g": 165
+            },
+            "url": "../surfaces/26.Left-Accumbens-area.vtk"
+        },
+        {
+            "filename": "28.Left-VentralDC.vtk",
+            "name": "Left-VentralDC",
+            "label": "28",
+            "color": {
+                "r": 165,
+                "b": 42,
+                "g": 42
+            },
+            "url": "../surfaces/28.Left-VentralDC.vtk"
+        },
+        {
+            "filename": "30.Left-vessel.vtk",
+            "name": "Left-vessel",
+            "label": "30",
+            "color": {
+                "r": 160,
+                "b": 240,
+                "g": 32
+            },
+            "url": "../surfaces/30.Left-vessel.vtk"
+        },
+        {
+            "filename": "31.Left-choroid-plexus.vtk",
+            "name": "Left-choroid-plexus",
+            "label": "31",
+            "color": {
+                "r": 0,
+                "b": 200,
+                "g": 200
+            },
+            "url": "../surfaces/31.Left-choroid-plexus.vtk"
+        },
+        {
+            "filename": "41.Right-Cerebral-White-Matter.vtk",
+            "name": "Right-Cerebral-White-Matter",
+            "label": "41",
+            "color": {
+                "r": 245,
+                "b": 245,
+                "g": 245
+            },
+            "url": "../surfaces/41.Right-Cerebral-White-Matter.vtk"
+        },
+        {
+            "filename": "43.Right-Lateral-Ventricle.vtk",
+            "name": "Right-Lateral-Ventricle",
+            "label": "43",
+            "color": {
+                "r": 120,
+                "b": 134,
+                "g": 18
+            },
+            "url": "../surfaces/43.Right-Lateral-Ventricle.vtk"
+        },
+        {
+            "filename": "44.Right-Inf-Lat-Vent.vtk",
+            "name": "Right-Inf-Lat-Vent",
+            "label": "44",
+            "color": {
+                "r": 196,
+                "b": 250,
+                "g": 58
+            },
+            "url": "../surfaces/44.Right-Inf-Lat-Vent.vtk"
+        },
+        {
+            "filename": "46.Right-Cerebellum-White-Matter.vtk",
+            "name": "Right-Cerebellum-White-Matter",
+            "label": "46",
+            "color": {
+                "r": 220,
+                "b": 164,
+                "g": 248
+            },
+            "url": "../surfaces/46.Right-Cerebellum-White-Matter.vtk"
+        },
+        {
+            "filename": "47.Right-Cerebellum-Cortex.vtk",
+            "name": "Right-Cerebellum-Cortex",
+            "label": "47",
+            "color": {
+                "r": 230,
+                "b": 34,
+                "g": 148
+            },
+            "url": "../surfaces/47.Right-Cerebellum-Cortex.vtk"
+        },
+        {
+            "filename": "49.Right-Thalamus-Proper.vtk",
+            "name": "Right-Thalamus-Proper",
+            "label": "49",
+            "color": {
+                "r": 0,
+                "b": 14,
+                "g": 118
+            },
+            "url": "../surfaces/49.Right-Thalamus-Proper.vtk"
+        },
+        {
+            "filename": "50.Right-Caudate.vtk",
+            "name": "Right-Caudate",
+            "label": "50",
+            "color": {
+                "r": 122,
+                "b": 220,
+                "g": 186
+            },
+            "url": "../surfaces/50.Right-Caudate.vtk"
+        },
+        {
+            "filename": "51.Right-Putamen.vtk",
+            "name": "Right-Putamen",
+            "label": "51",
+            "color": {
+                "r": 236,
+                "b": 176,
+                "g": 13
+            },
+            "url": "../surfaces/51.Right-Putamen.vtk"
+        },
+        {
+            "filename": "52.Right-Pallidum.vtk",
+            "name": "Right-Pallidum",
+            "label": "52",
+            "color": {
+                "r": 13,
+                "b": 255,
+                "g": 48
+            },
+            "url": "../surfaces/52.Right-Pallidum.vtk"
+        },
+        {
+            "filename": "53.Right-Hippocampus.vtk",
+            "name": "Right-Hippocampus",
+            "label": "53",
+            "color": {
+                "r": 220,
+                "b": 20,
+                "g": 216
+            },
+            "url": "../surfaces/53.Right-Hippocampus.vtk"
+        },
+        {
+            "filename": "54.Right-Amygdala.vtk",
+            "name": "Right-Amygdala",
+            "label": "54",
+            "color": {
+                "r": 103,
+                "b": 255,
+                "g": 255
+            },
+            "url": "../surfaces/54.Right-Amygdala.vtk"
+        },
+        {
+            "filename": "58.Right-Accumbens-area.vtk",
+            "name": "Right-Accumbens-area",
+            "label": "58",
+            "color": {
+                "r": 255,
+                "b": 0,
+                "g": 165
+            },
+            "url": "../surfaces/58.Right-Accumbens-area.vtk"
+        },
+        {
+            "filename": "60.Right-VentralDC.vtk",
+            "name": "Right-VentralDC",
+            "label": "60",
+            "color": {
+                "r": 165,
+                "b": 42,
+                "g": 42
+            },
+            "url": "../surfaces/60.Right-VentralDC.vtk"
+        },
+        {
+            "filename": "62.Right-vessel.vtk",
+            "name": "Right-vessel",
+            "label": "62",
+            "color": {
+                "r": 160,
+                "b": 240,
+                "g": 32
+            },
+            "url": "../surfaces/62.Right-vessel.vtk"
+        },
+        {
+            "filename": "63.Right-choroid-plexus.vtk",
+            "name": "Right-choroid-plexus",
+            "label": "63",
+            "color": {
+                "r": 0,
+                "b": 221,
+                "g": 200
+            },
+            "url": "../surfaces/63.Right-choroid-plexus.vtk"
+        },
+        {
+            "filename": "77.WM-hypointensities.vtk",
+            "name": "WM-hypointensities",
+            "label": "77",
+            "color": {
+                "r": 200,
+                "b": 255,
+                "g": 70
+            },
+            "url": "../surfaces/77.WM-hypointensities.vtk"
+        },
+        {
+            "filename": "85.Optic-Chiasm.vtk",
+            "name": "Optic-Chiasm",
+            "label": "85",
+            "color": {
+                "r": 234,
+                "b": 30,
+                "g": 169
+            },
+            "url": "../surfaces/85.Optic-Chiasm.vtk"
+        },
+        {
+            "filename": "251.CC_Posterior.vtk",
+            "name": "CC_Posterior",
+            "label": "251",
+            "color": {
+                "r": 0,
+                "b": 64,
+                "g": 0
+            },
+            "url": "../surfaces/251.CC_Posterior.vtk"
+        },
+        {
+            "filename": "252.CC_Mid_Posterior.vtk",
+            "name": "CC_Mid_Posterior",
+            "label": "252",
+            "color": {
+                "r": 0,
+                "b": 112,
+                "g": 0
+            },
+            "url": "../surfaces/252.CC_Mid_Posterior.vtk"
+        },
+        {
+            "filename": "253.CC_Central.vtk",
+            "name": "CC_Central",
+            "label": "253",
+            "color": {
+                "r": 0,
+                "b": 160,
+                "g": 0
+            },
+            "url": "../surfaces/253.CC_Central.vtk"
+        },
+        {
+            "filename": "254.CC_Mid_Anterior.vtk",
+            "name": "CC_Mid_Anterior",
+            "label": "254",
+            "color": {
+                "r": 0,
+                "b": 208,
+                "g": 0
+            },
+            "url": "../surfaces/254.CC_Mid_Anterior.vtk"
+        },
+        {
+            "filename": "255.CC_Anterior.vtk",
+            "name": "CC_Anterior",
+            "label": "255",
+            "color": {
+                "r": 0,
+                "b": 255,
+                "g": 0
+            },
+            "url": "../surfaces/255.CC_Anterior.vtk"
+        },
+        {
+            "filename": "11101.ctx_lh_G_and_S_frontomargin.vtk",
+            "name": "ctx_lh_G_and_S_frontomargin",
+            "label": "11101",
+            "color": {
+                "r": 23,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/11101.ctx_lh_G_and_S_frontomargin.vtk"
+        },
+        {
+            "filename": "11102.ctx_lh_G_and_S_occipital_inf.vtk",
+            "name": "ctx_lh_G_and_S_occipital_inf",
+            "label": "11102",
+            "color": {
+                "r": 23,
+                "b": 180,
+                "g": 60
+            },
+            "url": "../surfaces/11102.ctx_lh_G_and_S_occipital_inf.vtk"
+        },
+        {
+            "filename": "11103.ctx_lh_G_and_S_paracentral.vtk",
+            "name": "ctx_lh_G_and_S_paracentral",
+            "label": "11103",
+            "color": {
+                "r": 63,
+                "b": 60,
+                "g": 100
+            },
+            "url": "../surfaces/11103.ctx_lh_G_and_S_paracentral.vtk"
+        },
+        {
+            "filename": "11104.ctx_lh_G_and_S_subcentral.vtk",
+            "name": "ctx_lh_G_and_S_subcentral",
+            "label": "11104",
+            "color": {
+                "r": 63,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/11104.ctx_lh_G_and_S_subcentral.vtk"
+        },
+        {
+            "filename": "11105.ctx_lh_G_and_S_transv_frontopol.vtk",
+            "name": "ctx_lh_G_and_S_transv_frontopol",
+            "label": "11105",
+            "color": {
+                "r": 13,
+                "b": 250,
+                "g": 0
+            },
+            "url": "../surfaces/11105.ctx_lh_G_and_S_transv_frontopol.vtk"
+        },
+        {
+            "filename": "11106.ctx_lh_G_and_S_cingul-Ant.vtk",
+            "name": "ctx_lh_G_and_S_cingul-Ant",
+            "label": "11106",
+            "color": {
+                "r": 26,
+                "b": 0,
+                "g": 60
+            },
+            "url": "../surfaces/11106.ctx_lh_G_and_S_cingul-Ant.vtk"
+        },
+        {
+            "filename": "11107.ctx_lh_G_and_S_cingul-Mid-Ant.vtk",
+            "name": "ctx_lh_G_and_S_cingul-Mid-Ant",
+            "label": "11107",
+            "color": {
+                "r": 26,
+                "b": 75,
+                "g": 60
+            },
+            "url": "../surfaces/11107.ctx_lh_G_and_S_cingul-Mid-Ant.vtk"
+        },
+        {
+            "filename": "11108.ctx_lh_G_and_S_cingul-Mid-Post.vtk",
+            "name": "ctx_lh_G_and_S_cingul-Mid-Post",
+            "label": "11108",
+            "color": {
+                "r": 26,
+                "b": 150,
+                "g": 60
+            },
+            "url": "../surfaces/11108.ctx_lh_G_and_S_cingul-Mid-Post.vtk"
+        },
+        {
+            "filename": "11109.ctx_lh_G_cingul-Post-dorsal.vtk",
+            "name": "ctx_lh_G_cingul-Post-dorsal",
+            "label": "11109",
+            "color": {
+                "r": 25,
+                "b": 250,
+                "g": 60
+            },
+            "url": "../surfaces/11109.ctx_lh_G_cingul-Post-dorsal.vtk"
+        },
+        {
+            "filename": "11110.ctx_lh_G_cingul-Post-ventral.vtk",
+            "name": "ctx_lh_G_cingul-Post-ventral",
+            "label": "11110",
+            "color": {
+                "r": 60,
+                "b": 25,
+                "g": 25
+            },
+            "url": "../surfaces/11110.ctx_lh_G_cingul-Post-ventral.vtk"
+        },
+        {
+            "filename": "11111.ctx_lh_G_cuneus.vtk",
+            "name": "ctx_lh_G_cuneus",
+            "label": "11111",
+            "color": {
+                "r": 180,
+                "b": 20,
+                "g": 20
+            },
+            "url": "../surfaces/11111.ctx_lh_G_cuneus.vtk"
+        },
+        {
+            "filename": "11112.ctx_lh_G_front_inf-Opercular.vtk",
+            "name": "ctx_lh_G_front_inf-Opercular",
+            "label": "11112",
+            "color": {
+                "r": 220,
+                "b": 100,
+                "g": 20
+            },
+            "url": "../surfaces/11112.ctx_lh_G_front_inf-Opercular.vtk"
+        },
+        {
+            "filename": "11113.ctx_lh_G_front_inf-Orbital.vtk",
+            "name": "ctx_lh_G_front_inf-Orbital",
+            "label": "11113",
+            "color": {
+                "r": 140,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/11113.ctx_lh_G_front_inf-Orbital.vtk"
+        },
+        {
+            "filename": "11114.ctx_lh_G_front_inf-Triangul.vtk",
+            "name": "ctx_lh_G_front_inf-Triangul",
+            "label": "11114",
+            "color": {
+                "r": 180,
+                "b": 140,
+                "g": 220
+            },
+            "url": "../surfaces/11114.ctx_lh_G_front_inf-Triangul.vtk"
+        },
+        {
+            "filename": "11115.ctx_lh_G_front_middle.vtk",
+            "name": "ctx_lh_G_front_middle",
+            "label": "11115",
+            "color": {
+                "r": 140,
+                "b": 180,
+                "g": 100
+            },
+            "url": "../surfaces/11115.ctx_lh_G_front_middle.vtk"
+        },
+        {
+            "filename": "11116.ctx_lh_G_front_sup.vtk",
+            "name": "ctx_lh_G_front_sup",
+            "label": "11116",
+            "color": {
+                "r": 180,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/11116.ctx_lh_G_front_sup.vtk"
+        },
+        {
+            "filename": "11117.ctx_lh_G_Ins_lg_and_S_cent_ins.vtk",
+            "name": "ctx_lh_G_Ins_lg_and_S_cent_ins",
+            "label": "11117",
+            "color": {
+                "r": 23,
+                "b": 10,
+                "g": 10
+            },
+            "url": "../surfaces/11117.ctx_lh_G_Ins_lg_and_S_cent_ins.vtk"
+        },
+        {
+            "filename": "11118.ctx_lh_G_insular_short.vtk",
+            "name": "ctx_lh_G_insular_short",
+            "label": "11118",
+            "color": {
+                "r": 225,
+                "b": 140,
+                "g": 140
+            },
+            "url": "../surfaces/11118.ctx_lh_G_insular_short.vtk"
+        },
+        {
+            "filename": "11119.ctx_lh_G_occipital_middle.vtk",
+            "name": "ctx_lh_G_occipital_middle",
+            "label": "11119",
+            "color": {
+                "r": 180,
+                "b": 180,
+                "g": 60
+            },
+            "url": "../surfaces/11119.ctx_lh_G_occipital_middle.vtk"
+        },
+        {
+            "filename": "11120.ctx_lh_G_occipital_sup.vtk",
+            "name": "ctx_lh_G_occipital_sup",
+            "label": "11120",
+            "color": {
+                "r": 20,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/11120.ctx_lh_G_occipital_sup.vtk"
+        },
+        {
+            "filename": "11121.ctx_lh_G_oc-temp_lat-fusifor.vtk",
+            "name": "ctx_lh_G_oc-temp_lat-fusifor",
+            "label": "11121",
+            "color": {
+                "r": 60,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/11121.ctx_lh_G_oc-temp_lat-fusifor.vtk"
+        },
+        {
+            "filename": "11122.ctx_lh_G_oc-temp_med-Lingual.vtk",
+            "name": "ctx_lh_G_oc-temp_med-Lingual",
+            "label": "11122",
+            "color": {
+                "r": 220,
+                "b": 140,
+                "g": 180
+            },
+            "url": "../surfaces/11122.ctx_lh_G_oc-temp_med-Lingual.vtk"
+        },
+        {
+            "filename": "11123.ctx_lh_G_oc-temp_med-Parahip.vtk",
+            "name": "ctx_lh_G_oc-temp_med-Parahip",
+            "label": "11123",
+            "color": {
+                "r": 65,
+                "b": 20,
+                "g": 100
+            },
+            "url": "../surfaces/11123.ctx_lh_G_oc-temp_med-Parahip.vtk"
+        },
+        {
+            "filename": "11124.ctx_lh_G_orbital.vtk",
+            "name": "ctx_lh_G_orbital",
+            "label": "11124",
+            "color": {
+                "r": 220,
+                "b": 20,
+                "g": 60
+            },
+            "url": "../surfaces/11124.ctx_lh_G_orbital.vtk"
+        },
+        {
+            "filename": "11125.ctx_lh_G_pariet_inf-Angular.vtk",
+            "name": "ctx_lh_G_pariet_inf-Angular",
+            "label": "11125",
+            "color": {
+                "r": 20,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/11125.ctx_lh_G_pariet_inf-Angular.vtk"
+        },
+        {
+            "filename": "11126.ctx_lh_G_pariet_inf-Supramar.vtk",
+            "name": "ctx_lh_G_pariet_inf-Supramar",
+            "label": "11126",
+            "color": {
+                "r": 100,
+                "b": 60,
+                "g": 100
+            },
+            "url": "../surfaces/11126.ctx_lh_G_pariet_inf-Supramar.vtk"
+        },
+        {
+            "filename": "11127.ctx_lh_G_parietal_sup.vtk",
+            "name": "ctx_lh_G_parietal_sup",
+            "label": "11127",
+            "color": {
+                "r": 220,
+                "b": 220,
+                "g": 180
+            },
+            "url": "../surfaces/11127.ctx_lh_G_parietal_sup.vtk"
+        },
+        {
+            "filename": "11128.ctx_lh_G_postcentral.vtk",
+            "name": "ctx_lh_G_postcentral",
+            "label": "11128",
+            "color": {
+                "r": 20,
+                "b": 140,
+                "g": 180
+            },
+            "url": "../surfaces/11128.ctx_lh_G_postcentral.vtk"
+        },
+        {
+            "filename": "11129.ctx_lh_G_precentral.vtk",
+            "name": "ctx_lh_G_precentral",
+            "label": "11129",
+            "color": {
+                "r": 60,
+                "b": 180,
+                "g": 140
+            },
+            "url": "../surfaces/11129.ctx_lh_G_precentral.vtk"
+        },
+        {
+            "filename": "11130.ctx_lh_G_precuneus.vtk",
+            "name": "ctx_lh_G_precuneus",
+            "label": "11130",
+            "color": {
+                "r": 25,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/11130.ctx_lh_G_precuneus.vtk"
+        },
+        {
+            "filename": "11131.ctx_lh_G_rectus.vtk",
+            "name": "ctx_lh_G_rectus",
+            "label": "11131",
+            "color": {
+                "r": 20,
+                "b": 100,
+                "g": 60
+            },
+            "url": "../surfaces/11131.ctx_lh_G_rectus.vtk"
+        },
+        {
+            "filename": "11132.ctx_lh_G_subcallosal.vtk",
+            "name": "ctx_lh_G_subcallosal",
+            "label": "11132",
+            "color": {
+                "r": 60,
+                "b": 20,
+                "g": 220
+            },
+            "url": "../surfaces/11132.ctx_lh_G_subcallosal.vtk"
+        },
+        {
+            "filename": "11133.ctx_lh_G_temp_sup-G_T_transv.vtk",
+            "name": "ctx_lh_G_temp_sup-G_T_transv",
+            "label": "11133",
+            "color": {
+                "r": 60,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/11133.ctx_lh_G_temp_sup-G_T_transv.vtk"
+        },
+        {
+            "filename": "11134.ctx_lh_G_temp_sup-Lateral.vtk",
+            "name": "ctx_lh_G_temp_sup-Lateral",
+            "label": "11134",
+            "color": {
+                "r": 220,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/11134.ctx_lh_G_temp_sup-Lateral.vtk"
+        },
+        {
+            "filename": "11135.ctx_lh_G_temp_sup-Plan_polar.vtk",
+            "name": "ctx_lh_G_temp_sup-Plan_polar",
+            "label": "11135",
+            "color": {
+                "r": 65,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/11135.ctx_lh_G_temp_sup-Plan_polar.vtk"
+        },
+        {
+            "filename": "11136.ctx_lh_G_temp_sup-Plan_tempo.vtk",
+            "name": "ctx_lh_G_temp_sup-Plan_tempo",
+            "label": "11136",
+            "color": {
+                "r": 25,
+                "b": 20,
+                "g": 140
+            },
+            "url": "../surfaces/11136.ctx_lh_G_temp_sup-Plan_tempo.vtk"
+        },
+        {
+            "filename": "11137.ctx_lh_G_temporal_inf.vtk",
+            "name": "ctx_lh_G_temporal_inf",
+            "label": "11137",
+            "color": {
+                "r": 220,
+                "b": 100,
+                "g": 220
+            },
+            "url": "../surfaces/11137.ctx_lh_G_temporal_inf.vtk"
+        },
+        {
+            "filename": "11138.ctx_lh_G_temporal_middle.vtk",
+            "name": "ctx_lh_G_temporal_middle",
+            "label": "11138",
+            "color": {
+                "r": 180,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/11138.ctx_lh_G_temporal_middle.vtk"
+        },
+        {
+            "filename": "11139.ctx_lh_Lat_Fis-ant-Horizont.vtk",
+            "name": "ctx_lh_Lat_Fis-ant-Horizont",
+            "label": "11139",
+            "color": {
+                "r": 61,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/11139.ctx_lh_Lat_Fis-ant-Horizont.vtk"
+        },
+        {
+            "filename": "11140.ctx_lh_Lat_Fis-ant-Vertical.vtk",
+            "name": "ctx_lh_Lat_Fis-ant-Vertical",
+            "label": "11140",
+            "color": {
+                "r": 61,
+                "b": 60,
+                "g": 20
+            },
+            "url": "../surfaces/11140.ctx_lh_Lat_Fis-ant-Vertical.vtk"
+        },
+        {
+            "filename": "11141.ctx_lh_Lat_Fis-post.vtk",
+            "name": "ctx_lh_Lat_Fis-post",
+            "label": "11141",
+            "color": {
+                "r": 61,
+                "b": 100,
+                "g": 60
+            },
+            "url": "../surfaces/11141.ctx_lh_Lat_Fis-post.vtk"
+        },
+        {
+            "filename": "11143.ctx_lh_Pole_occipital.vtk",
+            "name": "ctx_lh_Pole_occipital",
+            "label": "11143",
+            "color": {
+                "r": 140,
+                "b": 60,
+                "g": 20
+            },
+            "url": "../surfaces/11143.ctx_lh_Pole_occipital.vtk"
+        },
+        {
+            "filename": "11144.ctx_lh_Pole_temporal.vtk",
+            "name": "ctx_lh_Pole_temporal",
+            "label": "11144",
+            "color": {
+                "r": 220,
+                "b": 20,
+                "g": 180
+            },
+            "url": "../surfaces/11144.ctx_lh_Pole_temporal.vtk"
+        },
+        {
+            "filename": "11145.ctx_lh_S_calcarine.vtk",
+            "name": "ctx_lh_S_calcarine",
+            "label": "11145",
+            "color": {
+                "r": 63,
+                "b": 180,
+                "g": 180
+            },
+            "url": "../surfaces/11145.ctx_lh_S_calcarine.vtk"
+        },
+        {
+            "filename": "11146.ctx_lh_S_central.vtk",
+            "name": "ctx_lh_S_central",
+            "label": "11146",
+            "color": {
+                "r": 221,
+                "b": 10,
+                "g": 20
+            },
+            "url": "../surfaces/11146.ctx_lh_S_central.vtk"
+        },
+        {
+            "filename": "11147.ctx_lh_S_cingul-Marginalis.vtk",
+            "name": "ctx_lh_S_cingul-Marginalis",
+            "label": "11147",
+            "color": {
+                "r": 221,
+                "b": 100,
+                "g": 20
+            },
+            "url": "../surfaces/11147.ctx_lh_S_cingul-Marginalis.vtk"
+        },
+        {
+            "filename": "11148.ctx_lh_S_circular_insula_ant.vtk",
+            "name": "ctx_lh_S_circular_insula_ant",
+            "label": "11148",
+            "color": {
+                "r": 221,
+                "b": 140,
+                "g": 60
+            },
+            "url": "../surfaces/11148.ctx_lh_S_circular_insula_ant.vtk"
+        },
+        {
+            "filename": "11149.ctx_lh_S_circular_insula_inf.vtk",
+            "name": "ctx_lh_S_circular_insula_inf",
+            "label": "11149",
+            "color": {
+                "r": 221,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/11149.ctx_lh_S_circular_insula_inf.vtk"
+        },
+        {
+            "filename": "11150.ctx_lh_S_circular_insula_sup.vtk",
+            "name": "ctx_lh_S_circular_insula_sup",
+            "label": "11150",
+            "color": {
+                "r": 61,
+                "b": 220,
+                "g": 220
+            },
+            "url": "../surfaces/11150.ctx_lh_S_circular_insula_sup.vtk"
+        },
+        {
+            "filename": "11151.ctx_lh_S_collat_transv_ant.vtk",
+            "name": "ctx_lh_S_collat_transv_ant",
+            "label": "11151",
+            "color": {
+                "r": 100,
+                "b": 200,
+                "g": 200
+            },
+            "url": "../surfaces/11151.ctx_lh_S_collat_transv_ant.vtk"
+        },
+        {
+            "filename": "11152.ctx_lh_S_collat_transv_post.vtk",
+            "name": "ctx_lh_S_collat_transv_post",
+            "label": "11152",
+            "color": {
+                "r": 10,
+                "b": 200,
+                "g": 200
+            },
+            "url": "../surfaces/11152.ctx_lh_S_collat_transv_post.vtk"
+        },
+        {
+            "filename": "11153.ctx_lh_S_front_inf.vtk",
+            "name": "ctx_lh_S_front_inf",
+            "label": "11153",
+            "color": {
+                "r": 221,
+                "b": 20,
+                "g": 220
+            },
+            "url": "../surfaces/11153.ctx_lh_S_front_inf.vtk"
+        },
+        {
+            "filename": "11154.ctx_lh_S_front_middle.vtk",
+            "name": "ctx_lh_S_front_middle",
+            "label": "11154",
+            "color": {
+                "r": 141,
+                "b": 100,
+                "g": 20
+            },
+            "url": "../surfaces/11154.ctx_lh_S_front_middle.vtk"
+        },
+        {
+            "filename": "11155.ctx_lh_S_front_sup.vtk",
+            "name": "ctx_lh_S_front_sup",
+            "label": "11155",
+            "color": {
+                "r": 61,
+                "b": 100,
+                "g": 220
+            },
+            "url": "../surfaces/11155.ctx_lh_S_front_sup.vtk"
+        },
+        {
+            "filename": "11156.ctx_lh_S_interm_prim-Jensen.vtk",
+            "name": "ctx_lh_S_interm_prim-Jensen",
+            "label": "11156",
+            "color": {
+                "r": 141,
+                "b": 20,
+                "g": 60
+            },
+            "url": "../surfaces/11156.ctx_lh_S_interm_prim-Jensen.vtk"
+        },
+        {
+            "filename": "11157.ctx_lh_S_intrapariet_and_P_trans.vtk",
+            "name": "ctx_lh_S_intrapariet_and_P_trans",
+            "label": "11157",
+            "color": {
+                "r": 143,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/11157.ctx_lh_S_intrapariet_and_P_trans.vtk"
+        },
+        {
+            "filename": "11158.ctx_lh_S_oc_middle_and_Lunatus.vtk",
+            "name": "ctx_lh_S_oc_middle_and_Lunatus",
+            "label": "11158",
+            "color": {
+                "r": 101,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/11158.ctx_lh_S_oc_middle_and_Lunatus.vtk"
+        },
+        {
+            "filename": "11159.ctx_lh_S_oc_sup_and_transversal.vtk",
+            "name": "ctx_lh_S_oc_sup_and_transversal",
+            "label": "11159",
+            "color": {
+                "r": 21,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/11159.ctx_lh_S_oc_sup_and_transversal.vtk"
+        },
+        {
+            "filename": "11160.ctx_lh_S_occipital_ant.vtk",
+            "name": "ctx_lh_S_occipital_ant",
+            "label": "11160",
+            "color": {
+                "r": 61,
+                "b": 180,
+                "g": 20
+            },
+            "url": "../surfaces/11160.ctx_lh_S_occipital_ant.vtk"
+        },
+        {
+            "filename": "11161.ctx_lh_S_oc-temp_lat.vtk",
+            "name": "ctx_lh_S_oc-temp_lat",
+            "label": "11161",
+            "color": {
+                "r": 221,
+                "b": 20,
+                "g": 140
+            },
+            "url": "../surfaces/11161.ctx_lh_S_oc-temp_lat.vtk"
+        },
+        {
+            "filename": "11162.ctx_lh_S_oc-temp_med_and_Lingual.vtk",
+            "name": "ctx_lh_S_oc-temp_med_and_Lingual",
+            "label": "11162",
+            "color": {
+                "r": 141,
+                "b": 220,
+                "g": 100
+            },
+            "url": "../surfaces/11162.ctx_lh_S_oc-temp_med_and_Lingual.vtk"
+        },
+        {
+            "filename": "11163.ctx_lh_S_orbital_lateral.vtk",
+            "name": "ctx_lh_S_orbital_lateral",
+            "label": "11163",
+            "color": {
+                "r": 221,
+                "b": 20,
+                "g": 100
+            },
+            "url": "../surfaces/11163.ctx_lh_S_orbital_lateral.vtk"
+        },
+        {
+            "filename": "11164.ctx_lh_S_orbital_med-olfact.vtk",
+            "name": "ctx_lh_S_orbital_med-olfact",
+            "label": "11164",
+            "color": {
+                "r": 181,
+                "b": 20,
+                "g": 200
+            },
+            "url": "../surfaces/11164.ctx_lh_S_orbital_med-olfact.vtk"
+        },
+        {
+            "filename": "11165.ctx_lh_S_orbital-H_Shaped.vtk",
+            "name": "ctx_lh_S_orbital-H_Shaped",
+            "label": "11165",
+            "color": {
+                "r": 101,
+                "b": 20,
+                "g": 20
+            },
+            "url": "../surfaces/11165.ctx_lh_S_orbital-H_Shaped.vtk"
+        },
+        {
+            "filename": "11166.ctx_lh_S_parieto_occipital.vtk",
+            "name": "ctx_lh_S_parieto_occipital",
+            "label": "11166",
+            "color": {
+                "r": 101,
+                "b": 180,
+                "g": 100
+            },
+            "url": "../surfaces/11166.ctx_lh_S_parieto_occipital.vtk"
+        },
+        {
+            "filename": "11167.ctx_lh_S_pericallosal.vtk",
+            "name": "ctx_lh_S_pericallosal",
+            "label": "11167",
+            "color": {
+                "r": 181,
+                "b": 20,
+                "g": 220
+            },
+            "url": "../surfaces/11167.ctx_lh_S_pericallosal.vtk"
+        },
+        {
+            "filename": "11168.ctx_lh_S_postcentral.vtk",
+            "name": "ctx_lh_S_postcentral",
+            "label": "11168",
+            "color": {
+                "r": 21,
+                "b": 200,
+                "g": 140
+            },
+            "url": "../surfaces/11168.ctx_lh_S_postcentral.vtk"
+        },
+        {
+            "filename": "11169.ctx_lh_S_precentral-inf-part.vtk",
+            "name": "ctx_lh_S_precentral-inf-part",
+            "label": "11169",
+            "color": {
+                "r": 21,
+                "b": 240,
+                "g": 20
+            },
+            "url": "../surfaces/11169.ctx_lh_S_precentral-inf-part.vtk"
+        },
+        {
+            "filename": "11170.ctx_lh_S_precentral-sup-part.vtk",
+            "name": "ctx_lh_S_precentral-sup-part",
+            "label": "11170",
+            "color": {
+                "r": 21,
+                "b": 200,
+                "g": 20
+            },
+            "url": "../surfaces/11170.ctx_lh_S_precentral-sup-part.vtk"
+        },
+        {
+            "filename": "11171.ctx_lh_S_suborbital.vtk",
+            "name": "ctx_lh_S_suborbital",
+            "label": "11171",
+            "color": {
+                "r": 21,
+                "b": 60,
+                "g": 20
+            },
+            "url": "../surfaces/11171.ctx_lh_S_suborbital.vtk"
+        },
+        {
+            "filename": "11172.ctx_lh_S_subparietal.vtk",
+            "name": "ctx_lh_S_subparietal",
+            "label": "11172",
+            "color": {
+                "r": 101,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/11172.ctx_lh_S_subparietal.vtk"
+        },
+        {
+            "filename": "11173.ctx_lh_S_temporal_inf.vtk",
+            "name": "ctx_lh_S_temporal_inf",
+            "label": "11173",
+            "color": {
+                "r": 21,
+                "b": 180,
+                "g": 180
+            },
+            "url": "../surfaces/11173.ctx_lh_S_temporal_inf.vtk"
+        },
+        {
+            "filename": "11174.ctx_lh_S_temporal_sup.vtk",
+            "name": "ctx_lh_S_temporal_sup",
+            "label": "11174",
+            "color": {
+                "r": 223,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/11174.ctx_lh_S_temporal_sup.vtk"
+        },
+        {
+            "filename": "11175.ctx_lh_S_temporal_transverse.vtk",
+            "name": "ctx_lh_S_temporal_transverse",
+            "label": "11175",
+            "color": {
+                "r": 221,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/11175.ctx_lh_S_temporal_transverse.vtk"
+        },
+        {
+            "filename": "12101.ctx_rh_G_and_S_frontomargin.vtk",
+            "name": "ctx_rh_G_and_S_frontomargin",
+            "label": "12101",
+            "color": {
+                "r": 23,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/12101.ctx_rh_G_and_S_frontomargin.vtk"
+        },
+        {
+            "filename": "12102.ctx_rh_G_and_S_occipital_inf.vtk",
+            "name": "ctx_rh_G_and_S_occipital_inf",
+            "label": "12102",
+            "color": {
+                "r": 23,
+                "b": 180,
+                "g": 60
+            },
+            "url": "../surfaces/12102.ctx_rh_G_and_S_occipital_inf.vtk"
+        },
+        {
+            "filename": "12103.ctx_rh_G_and_S_paracentral.vtk",
+            "name": "ctx_rh_G_and_S_paracentral",
+            "label": "12103",
+            "color": {
+                "r": 63,
+                "b": 60,
+                "g": 100
+            },
+            "url": "../surfaces/12103.ctx_rh_G_and_S_paracentral.vtk"
+        },
+        {
+            "filename": "12104.ctx_rh_G_and_S_subcentral.vtk",
+            "name": "ctx_rh_G_and_S_subcentral",
+            "label": "12104",
+            "color": {
+                "r": 63,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/12104.ctx_rh_G_and_S_subcentral.vtk"
+        },
+        {
+            "filename": "12105.ctx_rh_G_and_S_transv_frontopol.vtk",
+            "name": "ctx_rh_G_and_S_transv_frontopol",
+            "label": "12105",
+            "color": {
+                "r": 13,
+                "b": 250,
+                "g": 0
+            },
+            "url": "../surfaces/12105.ctx_rh_G_and_S_transv_frontopol.vtk"
+        },
+        {
+            "filename": "12106.ctx_rh_G_and_S_cingul-Ant.vtk",
+            "name": "ctx_rh_G_and_S_cingul-Ant",
+            "label": "12106",
+            "color": {
+                "r": 26,
+                "b": 0,
+                "g": 60
+            },
+            "url": "../surfaces/12106.ctx_rh_G_and_S_cingul-Ant.vtk"
+        },
+        {
+            "filename": "12107.ctx_rh_G_and_S_cingul-Mid-Ant.vtk",
+            "name": "ctx_rh_G_and_S_cingul-Mid-Ant",
+            "label": "12107",
+            "color": {
+                "r": 26,
+                "b": 75,
+                "g": 60
+            },
+            "url": "../surfaces/12107.ctx_rh_G_and_S_cingul-Mid-Ant.vtk"
+        },
+        {
+            "filename": "12108.ctx_rh_G_and_S_cingul-Mid-Post.vtk",
+            "name": "ctx_rh_G_and_S_cingul-Mid-Post",
+            "label": "12108",
+            "color": {
+                "r": 26,
+                "b": 150,
+                "g": 60
+            },
+            "url": "../surfaces/12108.ctx_rh_G_and_S_cingul-Mid-Post.vtk"
+        },
+        {
+            "filename": "12109.ctx_rh_G_cingul-Post-dorsal.vtk",
+            "name": "ctx_rh_G_cingul-Post-dorsal",
+            "label": "12109",
+            "color": {
+                "r": 25,
+                "b": 250,
+                "g": 60
+            },
+            "url": "../surfaces/12109.ctx_rh_G_cingul-Post-dorsal.vtk"
+        },
+        {
+            "filename": "12110.ctx_rh_G_cingul-Post-ventral.vtk",
+            "name": "ctx_rh_G_cingul-Post-ventral",
+            "label": "12110",
+            "color": {
+                "r": 60,
+                "b": 25,
+                "g": 25
+            },
+            "url": "../surfaces/12110.ctx_rh_G_cingul-Post-ventral.vtk"
+        },
+        {
+            "filename": "12111.ctx_rh_G_cuneus.vtk",
+            "name": "ctx_rh_G_cuneus",
+            "label": "12111",
+            "color": {
+                "r": 180,
+                "b": 20,
+                "g": 20
+            },
+            "url": "../surfaces/12111.ctx_rh_G_cuneus.vtk"
+        },
+        {
+            "filename": "12112.ctx_rh_G_front_inf-Opercular.vtk",
+            "name": "ctx_rh_G_front_inf-Opercular",
+            "label": "12112",
+            "color": {
+                "r": 220,
+                "b": 100,
+                "g": 20
+            },
+            "url": "../surfaces/12112.ctx_rh_G_front_inf-Opercular.vtk"
+        },
+        {
+            "filename": "12113.ctx_rh_G_front_inf-Orbital.vtk",
+            "name": "ctx_rh_G_front_inf-Orbital",
+            "label": "12113",
+            "color": {
+                "r": 140,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/12113.ctx_rh_G_front_inf-Orbital.vtk"
+        },
+        {
+            "filename": "12114.ctx_rh_G_front_inf-Triangul.vtk",
+            "name": "ctx_rh_G_front_inf-Triangul",
+            "label": "12114",
+            "color": {
+                "r": 180,
+                "b": 140,
+                "g": 220
+            },
+            "url": "../surfaces/12114.ctx_rh_G_front_inf-Triangul.vtk"
+        },
+        {
+            "filename": "12115.ctx_rh_G_front_middle.vtk",
+            "name": "ctx_rh_G_front_middle",
+            "label": "12115",
+            "color": {
+                "r": 140,
+                "b": 180,
+                "g": 100
+            },
+            "url": "../surfaces/12115.ctx_rh_G_front_middle.vtk"
+        },
+        {
+            "filename": "12116.ctx_rh_G_front_sup.vtk",
+            "name": "ctx_rh_G_front_sup",
+            "label": "12116",
+            "color": {
+                "r": 180,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/12116.ctx_rh_G_front_sup.vtk"
+        },
+        {
+            "filename": "12117.ctx_rh_G_Ins_lg_and_S_cent_ins.vtk",
+            "name": "ctx_rh_G_Ins_lg_and_S_cent_ins",
+            "label": "12117",
+            "color": {
+                "r": 23,
+                "b": 10,
+                "g": 10
+            },
+            "url": "../surfaces/12117.ctx_rh_G_Ins_lg_and_S_cent_ins.vtk"
+        },
+        {
+            "filename": "12118.ctx_rh_G_insular_short.vtk",
+            "name": "ctx_rh_G_insular_short",
+            "label": "12118",
+            "color": {
+                "r": 225,
+                "b": 140,
+                "g": 140
+            },
+            "url": "../surfaces/12118.ctx_rh_G_insular_short.vtk"
+        },
+        {
+            "filename": "12119.ctx_rh_G_occipital_middle.vtk",
+            "name": "ctx_rh_G_occipital_middle",
+            "label": "12119",
+            "color": {
+                "r": 180,
+                "b": 180,
+                "g": 60
+            },
+            "url": "../surfaces/12119.ctx_rh_G_occipital_middle.vtk"
+        },
+        {
+            "filename": "12120.ctx_rh_G_occipital_sup.vtk",
+            "name": "ctx_rh_G_occipital_sup",
+            "label": "12120",
+            "color": {
+                "r": 20,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/12120.ctx_rh_G_occipital_sup.vtk"
+        },
+        {
+            "filename": "12121.ctx_rh_G_oc-temp_lat-fusifor.vtk",
+            "name": "ctx_rh_G_oc-temp_lat-fusifor",
+            "label": "12121",
+            "color": {
+                "r": 60,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/12121.ctx_rh_G_oc-temp_lat-fusifor.vtk"
+        },
+        {
+            "filename": "12122.ctx_rh_G_oc-temp_med-Lingual.vtk",
+            "name": "ctx_rh_G_oc-temp_med-Lingual",
+            "label": "12122",
+            "color": {
+                "r": 220,
+                "b": 140,
+                "g": 180
+            },
+            "url": "../surfaces/12122.ctx_rh_G_oc-temp_med-Lingual.vtk"
+        },
+        {
+            "filename": "12123.ctx_rh_G_oc-temp_med-Parahip.vtk",
+            "name": "ctx_rh_G_oc-temp_med-Parahip",
+            "label": "12123",
+            "color": {
+                "r": 65,
+                "b": 20,
+                "g": 100
+            },
+            "url": "../surfaces/12123.ctx_rh_G_oc-temp_med-Parahip.vtk"
+        },
+        {
+            "filename": "12124.ctx_rh_G_orbital.vtk",
+            "name": "ctx_rh_G_orbital",
+            "label": "12124",
+            "color": {
+                "r": 220,
+                "b": 20,
+                "g": 60
+            },
+            "url": "../surfaces/12124.ctx_rh_G_orbital.vtk"
+        },
+        {
+            "filename": "12125.ctx_rh_G_pariet_inf-Angular.vtk",
+            "name": "ctx_rh_G_pariet_inf-Angular",
+            "label": "12125",
+            "color": {
+                "r": 20,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/12125.ctx_rh_G_pariet_inf-Angular.vtk"
+        },
+        {
+            "filename": "12126.ctx_rh_G_pariet_inf-Supramar.vtk",
+            "name": "ctx_rh_G_pariet_inf-Supramar",
+            "label": "12126",
+            "color": {
+                "r": 100,
+                "b": 60,
+                "g": 100
+            },
+            "url": "../surfaces/12126.ctx_rh_G_pariet_inf-Supramar.vtk"
+        },
+        {
+            "filename": "12127.ctx_rh_G_parietal_sup.vtk",
+            "name": "ctx_rh_G_parietal_sup",
+            "label": "12127",
+            "color": {
+                "r": 220,
+                "b": 220,
+                "g": 180
+            },
+            "url": "../surfaces/12127.ctx_rh_G_parietal_sup.vtk"
+        },
+        {
+            "filename": "12128.ctx_rh_G_postcentral.vtk",
+            "name": "ctx_rh_G_postcentral",
+            "label": "12128",
+            "color": {
+                "r": 20,
+                "b": 140,
+                "g": 180
+            },
+            "url": "../surfaces/12128.ctx_rh_G_postcentral.vtk"
+        },
+        {
+            "filename": "12129.ctx_rh_G_precentral.vtk",
+            "name": "ctx_rh_G_precentral",
+            "label": "12129",
+            "color": {
+                "r": 60,
+                "b": 180,
+                "g": 140
+            },
+            "url": "../surfaces/12129.ctx_rh_G_precentral.vtk"
+        },
+        {
+            "filename": "12130.ctx_rh_G_precuneus.vtk",
+            "name": "ctx_rh_G_precuneus",
+            "label": "12130",
+            "color": {
+                "r": 25,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/12130.ctx_rh_G_precuneus.vtk"
+        },
+        {
+            "filename": "12131.ctx_rh_G_rectus.vtk",
+            "name": "ctx_rh_G_rectus",
+            "label": "12131",
+            "color": {
+                "r": 20,
+                "b": 100,
+                "g": 60
+            },
+            "url": "../surfaces/12131.ctx_rh_G_rectus.vtk"
+        },
+        {
+            "filename": "12132.ctx_rh_G_subcallosal.vtk",
+            "name": "ctx_rh_G_subcallosal",
+            "label": "12132",
+            "color": {
+                "r": 60,
+                "b": 20,
+                "g": 220
+            },
+            "url": "../surfaces/12132.ctx_rh_G_subcallosal.vtk"
+        },
+        {
+            "filename": "12133.ctx_rh_G_temp_sup-G_T_transv.vtk",
+            "name": "ctx_rh_G_temp_sup-G_T_transv",
+            "label": "12133",
+            "color": {
+                "r": 60,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/12133.ctx_rh_G_temp_sup-G_T_transv.vtk"
+        },
+        {
+            "filename": "12134.ctx_rh_G_temp_sup-Lateral.vtk",
+            "name": "ctx_rh_G_temp_sup-Lateral",
+            "label": "12134",
+            "color": {
+                "r": 220,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/12134.ctx_rh_G_temp_sup-Lateral.vtk"
+        },
+        {
+            "filename": "12135.ctx_rh_G_temp_sup-Plan_polar.vtk",
+            "name": "ctx_rh_G_temp_sup-Plan_polar",
+            "label": "12135",
+            "color": {
+                "r": 65,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/12135.ctx_rh_G_temp_sup-Plan_polar.vtk"
+        },
+        {
+            "filename": "12136.ctx_rh_G_temp_sup-Plan_tempo.vtk",
+            "name": "ctx_rh_G_temp_sup-Plan_tempo",
+            "label": "12136",
+            "color": {
+                "r": 25,
+                "b": 20,
+                "g": 140
+            },
+            "url": "../surfaces/12136.ctx_rh_G_temp_sup-Plan_tempo.vtk"
+        },
+        {
+            "filename": "12137.ctx_rh_G_temporal_inf.vtk",
+            "name": "ctx_rh_G_temporal_inf",
+            "label": "12137",
+            "color": {
+                "r": 220,
+                "b": 100,
+                "g": 220
+            },
+            "url": "../surfaces/12137.ctx_rh_G_temporal_inf.vtk"
+        },
+        {
+            "filename": "12138.ctx_rh_G_temporal_middle.vtk",
+            "name": "ctx_rh_G_temporal_middle",
+            "label": "12138",
+            "color": {
+                "r": 180,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/12138.ctx_rh_G_temporal_middle.vtk"
+        },
+        {
+            "filename": "12139.ctx_rh_Lat_Fis-ant-Horizont.vtk",
+            "name": "ctx_rh_Lat_Fis-ant-Horizont",
+            "label": "12139",
+            "color": {
+                "r": 61,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/12139.ctx_rh_Lat_Fis-ant-Horizont.vtk"
+        },
+        {
+            "filename": "12140.ctx_rh_Lat_Fis-ant-Vertical.vtk",
+            "name": "ctx_rh_Lat_Fis-ant-Vertical",
+            "label": "12140",
+            "color": {
+                "r": 61,
+                "b": 60,
+                "g": 20
+            },
+            "url": "../surfaces/12140.ctx_rh_Lat_Fis-ant-Vertical.vtk"
+        },
+        {
+            "filename": "12141.ctx_rh_Lat_Fis-post.vtk",
+            "name": "ctx_rh_Lat_Fis-post",
+            "label": "12141",
+            "color": {
+                "r": 61,
+                "b": 100,
+                "g": 60
+            },
+            "url": "../surfaces/12141.ctx_rh_Lat_Fis-post.vtk"
+        },
+        {
+            "filename": "12143.ctx_rh_Pole_occipital.vtk",
+            "name": "ctx_rh_Pole_occipital",
+            "label": "12143",
+            "color": {
+                "r": 140,
+                "b": 60,
+                "g": 20
+            },
+            "url": "../surfaces/12143.ctx_rh_Pole_occipital.vtk"
+        },
+        {
+            "filename": "12144.ctx_rh_Pole_temporal.vtk",
+            "name": "ctx_rh_Pole_temporal",
+            "label": "12144",
+            "color": {
+                "r": 220,
+                "b": 20,
+                "g": 180
+            },
+            "url": "../surfaces/12144.ctx_rh_Pole_temporal.vtk"
+        },
+        {
+            "filename": "12145.ctx_rh_S_calcarine.vtk",
+            "name": "ctx_rh_S_calcarine",
+            "label": "12145",
+            "color": {
+                "r": 63,
+                "b": 180,
+                "g": 180
+            },
+            "url": "../surfaces/12145.ctx_rh_S_calcarine.vtk"
+        },
+        {
+            "filename": "12146.ctx_rh_S_central.vtk",
+            "name": "ctx_rh_S_central",
+            "label": "12146",
+            "color": {
+                "r": 221,
+                "b": 10,
+                "g": 20
+            },
+            "url": "../surfaces/12146.ctx_rh_S_central.vtk"
+        },
+        {
+            "filename": "12147.ctx_rh_S_cingul-Marginalis.vtk",
+            "name": "ctx_rh_S_cingul-Marginalis",
+            "label": "12147",
+            "color": {
+                "r": 221,
+                "b": 100,
+                "g": 20
+            },
+            "url": "../surfaces/12147.ctx_rh_S_cingul-Marginalis.vtk"
+        },
+        {
+            "filename": "12148.ctx_rh_S_circular_insula_ant.vtk",
+            "name": "ctx_rh_S_circular_insula_ant",
+            "label": "12148",
+            "color": {
+                "r": 221,
+                "b": 140,
+                "g": 60
+            },
+            "url": "../surfaces/12148.ctx_rh_S_circular_insula_ant.vtk"
+        },
+        {
+            "filename": "12149.ctx_rh_S_circular_insula_inf.vtk",
+            "name": "ctx_rh_S_circular_insula_inf",
+            "label": "12149",
+            "color": {
+                "r": 221,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/12149.ctx_rh_S_circular_insula_inf.vtk"
+        },
+        {
+            "filename": "12150.ctx_rh_S_circular_insula_sup.vtk",
+            "name": "ctx_rh_S_circular_insula_sup",
+            "label": "12150",
+            "color": {
+                "r": 61,
+                "b": 220,
+                "g": 220
+            },
+            "url": "../surfaces/12150.ctx_rh_S_circular_insula_sup.vtk"
+        },
+        {
+            "filename": "12151.ctx_rh_S_collat_transv_ant.vtk",
+            "name": "ctx_rh_S_collat_transv_ant",
+            "label": "12151",
+            "color": {
+                "r": 100,
+                "b": 200,
+                "g": 200
+            },
+            "url": "../surfaces/12151.ctx_rh_S_collat_transv_ant.vtk"
+        },
+        {
+            "filename": "12152.ctx_rh_S_collat_transv_post.vtk",
+            "name": "ctx_rh_S_collat_transv_post",
+            "label": "12152",
+            "color": {
+                "r": 10,
+                "b": 200,
+                "g": 200
+            },
+            "url": "../surfaces/12152.ctx_rh_S_collat_transv_post.vtk"
+        },
+        {
+            "filename": "12153.ctx_rh_S_front_inf.vtk",
+            "name": "ctx_rh_S_front_inf",
+            "label": "12153",
+            "color": {
+                "r": 221,
+                "b": 20,
+                "g": 220
+            },
+            "url": "../surfaces/12153.ctx_rh_S_front_inf.vtk"
+        },
+        {
+            "filename": "12154.ctx_rh_S_front_middle.vtk",
+            "name": "ctx_rh_S_front_middle",
+            "label": "12154",
+            "color": {
+                "r": 141,
+                "b": 100,
+                "g": 20
+            },
+            "url": "../surfaces/12154.ctx_rh_S_front_middle.vtk"
+        },
+        {
+            "filename": "12155.ctx_rh_S_front_sup.vtk",
+            "name": "ctx_rh_S_front_sup",
+            "label": "12155",
+            "color": {
+                "r": 61,
+                "b": 100,
+                "g": 220
+            },
+            "url": "../surfaces/12155.ctx_rh_S_front_sup.vtk"
+        },
+        {
+            "filename": "12156.ctx_rh_S_interm_prim-Jensen.vtk",
+            "name": "ctx_rh_S_interm_prim-Jensen",
+            "label": "12156",
+            "color": {
+                "r": 141,
+                "b": 20,
+                "g": 60
+            },
+            "url": "../surfaces/12156.ctx_rh_S_interm_prim-Jensen.vtk"
+        },
+        {
+            "filename": "12157.ctx_rh_S_intrapariet_and_P_trans.vtk",
+            "name": "ctx_rh_S_intrapariet_and_P_trans",
+            "label": "12157",
+            "color": {
+                "r": 143,
+                "b": 220,
+                "g": 20
+            },
+            "url": "../surfaces/12157.ctx_rh_S_intrapariet_and_P_trans.vtk"
+        },
+        {
+            "filename": "12158.ctx_rh_S_oc_middle_and_Lunatus.vtk",
+            "name": "ctx_rh_S_oc_middle_and_Lunatus",
+            "label": "12158",
+            "color": {
+                "r": 101,
+                "b": 220,
+                "g": 60
+            },
+            "url": "../surfaces/12158.ctx_rh_S_oc_middle_and_Lunatus.vtk"
+        },
+        {
+            "filename": "12159.ctx_rh_S_oc_sup_and_transversal.vtk",
+            "name": "ctx_rh_S_oc_sup_and_transversal",
+            "label": "12159",
+            "color": {
+                "r": 21,
+                "b": 140,
+                "g": 20
+            },
+            "url": "../surfaces/12159.ctx_rh_S_oc_sup_and_transversal.vtk"
+        },
+        {
+            "filename": "12160.ctx_rh_S_occipital_ant.vtk",
+            "name": "ctx_rh_S_occipital_ant",
+            "label": "12160",
+            "color": {
+                "r": 61,
+                "b": 180,
+                "g": 20
+            },
+            "url": "../surfaces/12160.ctx_rh_S_occipital_ant.vtk"
+        },
+        {
+            "filename": "12161.ctx_rh_S_oc-temp_lat.vtk",
+            "name": "ctx_rh_S_oc-temp_lat",
+            "label": "12161",
+            "color": {
+                "r": 221,
+                "b": 20,
+                "g": 140
+            },
+            "url": "../surfaces/12161.ctx_rh_S_oc-temp_lat.vtk"
+        },
+        {
+            "filename": "12162.ctx_rh_S_oc-temp_med_and_Lingual.vtk",
+            "name": "ctx_rh_S_oc-temp_med_and_Lingual",
+            "label": "12162",
+            "color": {
+                "r": 141,
+                "b": 220,
+                "g": 100
+            },
+            "url": "../surfaces/12162.ctx_rh_S_oc-temp_med_and_Lingual.vtk"
+        },
+        {
+            "filename": "12163.ctx_rh_S_orbital_lateral.vtk",
+            "name": "ctx_rh_S_orbital_lateral",
+            "label": "12163",
+            "color": {
+                "r": 221,
+                "b": 20,
+                "g": 100
+            },
+            "url": "../surfaces/12163.ctx_rh_S_orbital_lateral.vtk"
+        },
+        {
+            "filename": "12164.ctx_rh_S_orbital_med-olfact.vtk",
+            "name": "ctx_rh_S_orbital_med-olfact",
+            "label": "12164",
+            "color": {
+                "r": 181,
+                "b": 20,
+                "g": 200
+            },
+            "url": "../surfaces/12164.ctx_rh_S_orbital_med-olfact.vtk"
+        },
+        {
+            "filename": "12165.ctx_rh_S_orbital-H_Shaped.vtk",
+            "name": "ctx_rh_S_orbital-H_Shaped",
+            "label": "12165",
+            "color": {
+                "r": 101,
+                "b": 20,
+                "g": 20
+            },
+            "url": "../surfaces/12165.ctx_rh_S_orbital-H_Shaped.vtk"
+        },
+        {
+            "filename": "12166.ctx_rh_S_parieto_occipital.vtk",
+            "name": "ctx_rh_S_parieto_occipital",
+            "label": "12166",
+            "color": {
+                "r": 101,
+                "b": 180,
+                "g": 100
+            },
+            "url": "../surfaces/12166.ctx_rh_S_parieto_occipital.vtk"
+        },
+        {
+            "filename": "12167.ctx_rh_S_pericallosal.vtk",
+            "name": "ctx_rh_S_pericallosal",
+            "label": "12167",
+            "color": {
+                "r": 181,
+                "b": 20,
+                "g": 220
+            },
+            "url": "../surfaces/12167.ctx_rh_S_pericallosal.vtk"
+        },
+        {
+            "filename": "12168.ctx_rh_S_postcentral.vtk",
+            "name": "ctx_rh_S_postcentral",
+            "label": "12168",
+            "color": {
+                "r": 21,
+                "b": 200,
+                "g": 140
+            },
+            "url": "../surfaces/12168.ctx_rh_S_postcentral.vtk"
+        },
+        {
+            "filename": "12169.ctx_rh_S_precentral-inf-part.vtk",
+            "name": "ctx_rh_S_precentral-inf-part",
+            "label": "12169",
+            "color": {
+                "r": 21,
+                "b": 240,
+                "g": 20
+            },
+            "url": "../surfaces/12169.ctx_rh_S_precentral-inf-part.vtk"
+        },
+        {
+            "filename": "12170.ctx_rh_S_precentral-sup-part.vtk",
+            "name": "ctx_rh_S_precentral-sup-part",
+            "label": "12170",
+            "color": {
+                "r": 21,
+                "b": 200,
+                "g": 20
+            },
+            "url": "../surfaces/12170.ctx_rh_S_precentral-sup-part.vtk"
+        },
+        {
+            "filename": "12171.ctx_rh_S_suborbital.vtk",
+            "name": "ctx_rh_S_suborbital",
+            "label": "12171",
+            "color": {
+                "r": 21,
+                "b": 60,
+                "g": 20
+            },
+            "url": "../surfaces/12171.ctx_rh_S_suborbital.vtk"
+        },
+        {
+            "filename": "12172.ctx_rh_S_subparietal.vtk",
+            "name": "ctx_rh_S_subparietal",
+            "label": "12172",
+            "color": {
+                "r": 101,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/12172.ctx_rh_S_subparietal.vtk"
+        },
+        {
+            "filename": "12173.ctx_rh_S_temporal_inf.vtk",
+            "name": "ctx_rh_S_temporal_inf",
+            "label": "12173",
+            "color": {
+                "r": 21,
+                "b": 180,
+                "g": 180
+            },
+            "url": "../surfaces/12173.ctx_rh_S_temporal_inf.vtk"
+        },
+        {
+            "filename": "12174.ctx_rh_S_temporal_sup.vtk",
+            "name": "ctx_rh_S_temporal_sup",
+            "label": "12174",
+            "color": {
+                "r": 223,
+                "b": 60,
+                "g": 220
+            },
+            "url": "../surfaces/12174.ctx_rh_S_temporal_sup.vtk"
+        },
+        {
+            "filename": "12175.ctx_rh_S_temporal_transverse.vtk",
+            "name": "ctx_rh_S_temporal_transverse",
+            "label": "12175",
+            "color": {
+                "r": 221,
+                "b": 60,
+                "g": 60
+            },
+            "url": "../surfaces/12175.ctx_rh_S_temporal_transverse.vtk"
+        }
+    ]
+}
+  </script>
+  <script type="module" crossorigin src="./assets/index.a795d4d3.js"></script>
+  <link rel="modulepreload" href="./assets/vendor.3bdcd755.js">
+  <link rel="stylesheet" href="./assets/index.3c6d3a59.css">
+</head>
+<body>
+  <div id="app"/>
+</body>
+</html>

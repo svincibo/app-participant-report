@@ -44,7 +44,7 @@ with open(html_filename, "w") as html:
     html.write(f'<div class="thumbnails">\n')
 
     #create overlay for each volumes
-    for vidx in range(0, bold_data.shape[3]):
+    for vidx in range(0, bold_data.shape[3], 10):
         print("creating thumbnail for", vidx)
         volume = bold_data[:,:,:,vidx]
 
@@ -58,6 +58,6 @@ with open(html_filename, "w") as html:
         fig.savefig(f'output/html/bold/thumb{vidx}.png',  bbox_inches='tight')
         plt.close(fig)
 
-        html.write(f'<div class="thumbnail"><b>Volume {vidx}</b><br><img src="bold/thumb{vidx}.png"></div></li>\n')
+        html.write(f'<div class="thumbnail"><b>Volume {vidx}</b><br><img src="../bold/thumb{vidx}.png"></div></li>\n')
 
     html.write("</div>\n")
