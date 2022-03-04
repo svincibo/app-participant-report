@@ -15,7 +15,9 @@ cat templates/header.html > output/html/index.html
 if [ -d "$wmctracts" ]; then
     echo "handling wmc"
     cp -r $wmctracts output/html
-    cp -r $wmcsurfaces output/html
+    if [ -d "wmcsurfaces" ]; then
+        cp -r $wmcsurfaces output/html
+    fi
     cat templates/wmc.html >> output/html/index.html
 
     echo "setting up tractview config"
