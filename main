@@ -12,10 +12,10 @@ mkdir -p tmp
 mkdir -p output/html
 cat templates/header.html > output/html/index.html
 
-if [ -d "$wmcsurfaces" ]; then
+if [ -d "$wmctracts" ]; then
     echo "handling wmc"
-    cp -r $wmcsurfaces output/html
     cp -r $wmctracts output/html
+    cp -r $wmcsurfaces output/html
     cat templates/wmc.html >> output/html/index.html
 
     echo "setting up tractview config"
