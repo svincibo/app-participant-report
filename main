@@ -12,6 +12,8 @@ mkdir -p tmp
 mkdir -p output/html
 cat templates/header.html > output/html/index.html
 
+chmod -R +rx output/html #to allow us to rerun this script
+
 if [ -d "$wmctracts" ]; then
     echo "handling wmc"
     cp -r $wmctracts output/html
