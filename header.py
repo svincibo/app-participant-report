@@ -19,7 +19,7 @@ if "subject" in meta:
 
 session = ""
 if "session" in meta:
-    session = "/ ses-"+meta["subject"]
+    session = "/ ses-"+meta["session"]
 
 html = """
 <!doctype html>
@@ -39,7 +39,8 @@ html = """
 
 <div class="container">
     <br>
-    <h1 class="title">Participant Report - %s %s</h1>
+    <h1 class="title">Participant Report</h2>
+    <h2>%s %s</h2>
 
     <p>TODO describe for the whole report</p>
     <br>
