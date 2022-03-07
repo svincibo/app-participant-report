@@ -3,5 +3,12 @@
     "wmctracts": "testdata/proj-6047efa9ebfe45171d3aae9d/sub-029.ses-1/dt-neuro-wmc.run-2.id-61664487d67ba43075cc9ea6/tracts",
     "wmcsurfaces": "testdata/proj-6047efa9ebfe45171d3aae9d/sub-029.ses-1/dt-neuro-wmc.run-2.id-61664487d67ba43075cc9ea6/surfaces",
     "bold": "testdata/proj-6047efa9ebfe45171d3aae9d/sub-029.ses-1/dt-neuro-func-task.tag-wml.run-1.id-614b5eca57b56d519dbc56b8/bold.nii.gz",
-    "fs": "testdata/proj-6047efa9ebfe45171d3aae9d/sub-029.ses-1/dt-neuro-freesurfer.tag-acpc_aligned.tag-preprocessed.run-1.id-6165fca6a084818659bd57d0/output"
+    "fs": "testdata/proj-6047efa9ebfe45171d3aae9d/sub-029.ses-1/dt-neuro-freesurfer.tag-acpc_aligned.tag-preprocessed.run-1.id-6165fca6a084818659bd57d0/output",
+    "_inputs": [
+        {
+            "meta": {
+                "subject": "123"
+            }
+        }
+    ]
 }
